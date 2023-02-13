@@ -614,4 +614,4 @@ test = ["covdefaults (>=2.2.2)", "coverage (>=7.1)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "6e6624149c6dd4cd9df5543771d9ae0160cf65ae2244096f8474a83ec8fc496b"
+content-hash = "6e6624149c6dd4cd9df5543771d9ae0160cf65ae2244096f8474a83ec8fc496b" #pragma: allowlist secret
