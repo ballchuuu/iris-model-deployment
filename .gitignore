@@ -1,0 +1,8 @@
+# coverage files
+htmlcov
+junit
+.coverage
+coverage.xml
+
+# local development
+.python-version
