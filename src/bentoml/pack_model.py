@@ -1,10 +1,11 @@
 import pickle
-import bentoml 
 
+import bentoml
 from config import settings
 
 """
-This file is only ran when a new model has been trained and confirmed to used for deployment.
+This file is only ran when a new model has been trained
+and confirmed to used for deployment.
 """
 
 if __name__ == "__main__":
@@ -14,13 +15,10 @@ if __name__ == "__main__":
 
     # put model into bentoml store
     saved_model = bentoml.sklearn.save_model(
-        name=settings.bento_model_name, 
+        name=settings.bento_model_name,
         model=loaded_model,
-        signatures={
-        "predict": {
+        signatures={"predict": {
             "batchable": True,
         }}
     )
     print(f"[SUCCESS]: Saved model to {settings.bento_model_name}")
-
-
