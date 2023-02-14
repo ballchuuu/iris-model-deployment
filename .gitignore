@@ -1,8 +1,11 @@
-# coverage files
+# coverage and testing files
 htmlcov
 junit
 .coverage
 coverage.xml
+.pytest_cache
 
 # local development
 .python-version
+__pycache__
+
