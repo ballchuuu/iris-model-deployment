@@ -1,7 +1,6 @@
 import bentoml
 import numpy as np
 from bentoml.io import NumpyNdarray
-
 from config import settings
 
 runner = bentoml.sklearn.get(f"{settings.bento_model_name}:latest").to_runner()

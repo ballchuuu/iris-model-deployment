@@ -1,7 +1,6 @@
 import pytest
-
-from app.core.store import Store
 from app.core.aiohttp.client import aioHttpClient
+from app.core.store import Store
 
 @pytest.mark.asyncio
 async def test_store():

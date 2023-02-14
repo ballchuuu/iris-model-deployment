@@ -1,5 +1,4 @@
-import pytest 
-
+import pytest
 from app.core.aiohttp.client import aioHttpClient
 
 @pytest.mark.asyncio

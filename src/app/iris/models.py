@@ -25,5 +25,4 @@ class IrisInfoLog(BaseModel):
 
 class IrisErrorLog(BaseModel):
     param: InputIris
-    error_msg : str
-
+    error_msg: str

@@ -12,7 +12,7 @@ class TestIrisModelEndpoint:
             }
         )
         assert response.status_code == 200
-    
+
     def test_wrong_input(self, auth_client):
         response = auth_client.post(
             f"{router_prefix}/predict",

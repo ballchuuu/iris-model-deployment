@@ -9,4 +9,5 @@ class Store:
     async def shutdown(self):
         await self.bento_client.shutdown()
 
+
 store = Store()

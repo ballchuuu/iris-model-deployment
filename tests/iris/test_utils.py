@@ -1,7 +1,7 @@
-import pytest
-from unittest.mock import patch
 from unittest.mock import AsyncMock
+from unittest.mock import patch
 
+import pytest
 from app.iris.models import InputIris
 from app.iris.models import OutputIris
 from app.iris.utils import get_iris_prediction
@@ -56,7 +56,10 @@ async def test_failed_bento_get_iris_prediction(mock_session, mock_settings):
 
     test = await get_iris_prediction(test_input)
 
-    assert test == OutputIris(output="Error in prediction endpoint", model_name="sample_model")
+    assert test == OutputIris(
+        output="Error in prediction endpoint",
+        model_name="sample_model"
+    )
 
 
 @pytest.mark.asyncio
@@ -70,7 +73,7 @@ async def test_empty_bento_resp_get_iris_prediction(mock_session, mock_settings)
     mock_session.post.return_value.__aenter__.return_value = mock_response
 
     mock_settings.pickle_model_name = "sample_model"
-    
+
     test_input = InputIris(
         **{
             "SepalLengthCm": 4.4,
@@ -82,7 +85,10 @@ async def test_empty_bento_resp_get_iris_prediction(mock_session, mock_settings)
 
     test = await get_iris_prediction(test_input)
 
-    assert test == OutputIris(output="Error in prediction endpoint", model_name="sample_model")
+    assert test == OutputIris(
+        output="Error in prediction endpoint",
+        model_name="sample_model"
+    )
 
 
 @pytest.mark.asyncio
@@ -105,4 +111,7 @@ async def test_500_bento_get_iris_prediction(mock_session, mock_settings):
 
     test = await get_iris_prediction(test_input)
 
-    assert test == OutputIris(output="Error in prediction endpoint", model_name="sample_model")
+    assert test == OutputIris(
+        output="Error in prediction endpoint",
+        model_name="sample_model"
+    )

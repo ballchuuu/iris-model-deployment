@@ -1,8 +1,7 @@
-from fastapi import FastAPI
-
-from app.core.store import store
 from app.common.router import router as common_router
+from app.core.store import store
 from app.iris.router import router as iris_router
+from fastapi import FastAPI
 
 app = FastAPI()
 
