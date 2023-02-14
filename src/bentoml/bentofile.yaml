@@ -9,3 +9,5 @@ python:
     packages:
     - scikit-learn
     - pandas
+    - python-dotenv
+    - pydantic
