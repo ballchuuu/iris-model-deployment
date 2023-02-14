@@ -1,0 +1,11 @@
+service: "service.py:svc"
+labels:
+    owner: vinnie
+    project: iris
+include:
+    - "*.py"
+    - "assets/"
+python:
+    packages:
+    - scikit-learn
+    - pandas
