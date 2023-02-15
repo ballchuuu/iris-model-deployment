@@ -4,7 +4,7 @@ from utils import train_model
 from utils import train_test_split_by_species
 
 if __name__ == "__main__":
-    df = pd.read_csv("../data/Iris.csv")
+    df = pd.read_csv("../../data/Iris.csv")
 
     # Train test split
     X = df.drop(["Species", "Id"], axis=1)
