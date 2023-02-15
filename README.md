@@ -122,7 +122,7 @@ curl --location --request POST 'http://localhost:8000/iris/predict' --header 'Co
 
 Sample response
 ```
-{"output":"Iris-virginica","model_name":"log_reg_1"
+{"output":"Iris-virginica","model_name":"log_reg_1"}
 ```
 
 ### Docker Deployment
@@ -145,7 +145,7 @@ curl --location --request POST 'http://localhost:5000/iris/predict' --header 'Co
 
 Sample response
 ```
-{"output":"Iris-virginica","model_name":"log_reg_1"
+{"output":"Iris-virginica","model_name":"log_reg_1"}
 ```
 
 ## Directory
